@@ -38,7 +38,7 @@ if(Check(input) == 0):
     sys.exit()
 
 
-if (len(parola)<10 or len(parola)>15):
+if (len(parola)<=10 or len(parola)>=15):
     print("parola invalida, numarul de caractere nu este corect")
     sys.exit()
 
