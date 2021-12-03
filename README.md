@@ -23,3 +23,4 @@ Parola conține doar litere mici, litere mari (ambele fără diacritice) și cif
 
 # Documentatie
 https://stackoverflow.com/questions/43025170/python-3-6-file-decryption-with-xor
+https://pythonguides.com/python-read-a-binary-file/
