@@ -1,0 +1,17 @@
+La început, am realizat un XOR între fișierele de input și output ale adversarilor, obținând un șir de numere.
+
+Din șirul respectiv, am luat secvența ce se repetă și am făcut conversia în baza 2 a numerelor din secvență (având câte 8 biți pe număr).
+
+În acest nou șir de biți, am observat din nou o secvență ce se repetă, și am transformat întreaga secventă într-un singur număr în baza 10, 
+cu cel mai semnificativ bit aflat pe poziția cea mai din dreapta.
+
+Deoarece oricărui număr din baza 2 îi corespunde un singur număr în baza 10, am putut utiliza metoda Greedy pentru a lua, pe rând, fiecare valoare a parolei. 
+Am incercat valoarea maxima pentru lungime 11,12,13,14 si am descoperit ca doar pentru lungime 12 se aproapie.
+
+Începând de pe prima poziție a parolei (aceasta având valoarea cea mai mare), găsim de fiecare dată caracterul care este 
+cea mai mare valoare mai mică decât cea mai mică valoare mai mare decât numărul obținut prin transformarea din baza 2 a șirului.
+
+Mai întâi, luăm 000...0 (12 de 0), deoarece 0 este cea mai mică valoare, după care începem cu prima cifră.
+Am aflat astfel că x00...0 (11 de 0) este cea mai mare valoare mai mică decât cea mai mică valoare mai mare decât numărul obținut din transformare.
+În acest caz, cea mai mică valoare mai mare decât numărul obținut este y00...0 (11 de 0).
+Continuând în același mod și pentru următoarele poziții, am aflat în final parola.
