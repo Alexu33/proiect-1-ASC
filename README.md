@@ -28,3 +28,6 @@ https://pythonguides.com/python-read-a-binary-file/
 
 # Parola echipei Vaslui Hackers
 x8fdAmVVskZe
+
+# Rezolvare fara input
+Din cauza ca parola este criptata, singura metoda este brute force. Dupa ce decriptare.py se termina, testam fiecare parola din solutii.txt care ar fi posibila cu ajutorul decrypt.py
